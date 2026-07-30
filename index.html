@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sajiree Damle — Full-Stack Developer with an AI Edge</title>
-<meta name="description" content="Portfolio of Sajiree Damle — AI/ML Engineer & Full-Stack Developer. Creator of OsteoAI, 3x hackathon winner.">
+<title>Sajiree Damle — Full-Stack Developer & AI/ML Engineer</title>
+<meta name="description" content="Portfolio of Sajiree Damle — Third-year Computer Engineer, Full-Stack Developer & AI/ML Engineer at MMCOE Pune. 3x Hackathon winner, 5+ shipped projects.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@300..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -16,17 +16,18 @@
 <div class="cursor-glow" id="cursorGlow"></div>
 <div class="scroll-progress" id="scrollProgress"></div>
 
+<!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">SD<span class="nav-logo-dot">.</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="#about" class="nav-link"><span class="nav-num">01</span>About</a></li>
       <li><a href="#skills" class="nav-link"><span class="nav-num">02</span>Skills</a></li>
       <li><a href="#projects" class="nav-link"><span class="nav-num">03</span>Projects</a></li>
       <li><a href="#experience" class="nav-link"><span class="nav-num">04</span>Experience</a></li>
       <li><a href="#achievements" class="nav-link"><span class="nav-num">05</span>Achievements</a></li>
       <li><a href="#certifications" class="nav-link"><span class="nav-num">06</span>Certs</a></li>
-      <li><a href="#blog" class="nav-link"><span class="nav-num">07</span>Blog</a></li>
+      <li><a href="#community" class="nav-link"><span class="nav-num">07</span>Community</a></li>
       <li><a href="#contact" class="nav-link"><span class="nav-num">08</span>Contact</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -35,19 +36,22 @@
   </div>
 </nav>
 
+<!-- HERO -->
 <header class="hero" id="hero">
   <div class="hero-inner">
     <p class="hero-eyebrow reveal">// building things that matter</p>
     <h1 class="hero-title">
-      <span class="hero-line">Sajiree Damle</span>
-      <span class="hero-line hero-typing-wrap">
+      <span class="hero-name">Sajiree Damle</span>
+      <span class="hero-typing-wrap">
         <span id="typingText" class="hero-typing"></span><span class="typing-cursor">|</span>
       </span>
     </h1>
     <p class="hero-desc reveal">
-      Third-year Computer Engineer (CGPA <strong>9.65</strong>) who turns deep learning into deployed, real-world systems —
-      not slideware. Creator of <strong>OsteoAI</strong>, an osteoporosis-screening model that hit
-      <strong>93–94% accuracy</strong> and won <strong>3 hackathons</strong>, including one international.
+      Third-year Computer Engineer at <strong>MMCOE Pune</strong> (CGPA <strong>9.65</strong>) with a rare combination of
+      <strong>AI/ML depth</strong> and <strong>product-level full-stack breadth</strong>.
+      I build end-to-end — from model architecture to deployed frontend — and hold every layer to the same standard.
+      <strong>3x hackathon winner</strong> at international and national stages, with internships at Google, Cognifyz, and EduSkill.
+      The kind of engineer who asks <em>why</em> before writing a single line, and doesn't stop until it ships.
     </p>
     <div class="hero-stats reveal">
       <div class="hero-stat">
@@ -55,15 +59,15 @@
         <span class="hero-stat-label">Hackathons Won</span>
       </div>
       <div class="hero-stat">
-        <span class="hero-stat-num" data-count="9.6" data-decimal="true">0</span>
+        <span class="hero-stat-num" data-count="9.65" data-decimal="true">0</span>
         <span class="hero-stat-label">CGPA / 10</span>
       </div>
       <div class="hero-stat">
-        <span class="hero-stat-num" data-count="94" data-suffix="%">0</span>
-        <span class="hero-stat-label">Model Accuracy</span>
+        <span class="hero-stat-num" data-count="5" data-suffix="+">0</span>
+        <span class="hero-stat-label">Projects Shipped</span>
       </div>
       <div class="hero-stat">
-        <span class="hero-stat-num" data-count="7">0</span>
+        <span class="hero-stat-num" data-count="8">0</span>
         <span class="hero-stat-label">Certifications</span>
       </div>
     </div>
@@ -80,6 +84,7 @@
 
 <main>
 
+<!-- ABOUT -->
 <section class="section" id="about">
   <div class="section-inner">
     <p class="section-eyebrow reveal">01 / About</p>
@@ -88,21 +93,20 @@
     <div class="about-grid">
       <div class="about-text reveal">
         <p>
-          I'm a second-year Computer Engineering student at <strong>Marathwada Mitra Mandal's College of Engineering, Pune</strong>,
-          graduating in 2028 — but I've spent most of that time building systems that don't stay inside a notebook.
-          My flagship project, <strong>OsteoAI</strong>, is a clinical-grade osteoporosis risk-screening pipeline that
-          fuses EfficientNetV2S with a tabular MLP, uses Focal Loss to handle class imbalance, and ships Grad-CAM
-          explainability so a clinician can actually trust what the model is looking at.
+          I'm a third-year Computer Engineering student at <strong>Marathwada Mitra Mandal's College of Engineering, Pune</strong>,
+          graduating in 2028. My work sits at the intersection of AI/ML and full-stack engineering — I build systems
+          that are not just technically sound, but actually deployed and usable.
         </p>
         <p>
-          I care about the gap between a model that performs well on paper and one that's actually deployable —
-          which is why OsteoAI isn't just a Jupyter notebook. It's a full-stack product: FastAPI backend, React/Vite
-          frontend, live on Vercel, built to be used.
+          What drives me is the challenge of taking a hard problem all the way through: from understanding the domain,
+          to training a model, to shipping a frontend that puts it in someone's hands. Whether that's a healthcare
+          screening tool, an educational visualizer, or a campus platform, I bring the same standard: clean code,
+          real metrics, and something that works.
         </p>
         <p>
-          I compete as part of <strong>Team InnoQueens</strong>, an all-women hackathon team — alongside Jidnyasa Patil,
-          Asmi Tatawar, and Swarada Deshpande — and together we've taken OsteoAI to three wins, including
-          1st Runner-Up at an international hackathon hosted in Peru.
+          I compete as part of <strong>Team InnoQueens</strong> — an all-women hackathon team with Jidnyasa Patil,
+          Asmi Tatawar, and Swarada Deshpande — and we've placed at international and national stages.
+          I believe the best engineering happens when people who care deeply build together.
         </p>
       </div>
 
@@ -111,19 +115,23 @@
         <ul class="about-facts">
           <li>
             <span class="about-fact-icon">⛩</span>
-            <span>Studying Japanese — JLPT N5 certified, currently prepping for N4 (exam: July 2026) using Bunpo, Migii &amp; Anki</span>
+            <span>Studying Japanese — JLPT N5 certified, N4 exam taken July 2026, awaiting results. Daily practice via Bunpo, Migii &amp; Anki.</span>
           </li>
           <li>
             <span class="about-fact-icon">🏃</span>
-            <span>Completed multiple marathons — long-distance running is where I do my best problem-solving thinking</span>
+            <span>Completed multiple marathons — I do my best debugging thinking on long runs.</span>
           </li>
           <li>
             <span class="about-fact-icon">📺</span>
-            <span><em>Steins;Gate</em> is the anime that pulled me toward STEM in the first place — still my favorite</span>
+            <span><em>Steins;Gate</em> is the anime that pulled me into STEM. Still my all-time favourite.</span>
+          </li>
+          <li>
+            <span class="about-fact-icon">🏫</span>
+            <span>Volunteered at field visits to special schools — working with differently-abled students reminded me why building accessible, empathetic tech matters.</span>
           </li>
           <li>
             <span class="about-fact-icon">👩‍💻</span>
-            <span>Building in public with an all-women hackathon crew, because the best engineering happens in good company</span>
+            <span>Building in public with an all-women hackathon crew — because the best engineering happens in good company.</span>
           </li>
         </ul>
       </div>
@@ -131,11 +139,12 @@
   </div>
 </section>
 
+<!-- SKILLS -->
 <section class="section section-alt" id="skills">
   <div class="section-inner">
     <p class="section-eyebrow reveal">02 / Skills</p>
     <h2 class="section-title reveal">The stack, end to end.</h2>
-    <p class="section-sub reveal">From training a model to shipping the interface that puts it in front of a user.</p>
+    <p class="section-sub reveal">From designing a model architecture to shipping the interface that puts it in front of a user.</p>
 
     <div class="skills-grid">
       <div class="skill-card reveal">
@@ -146,7 +155,7 @@
         <div class="skill-tags">
           <span>TensorFlow</span><span>Keras</span><span>EfficientNetV2</span><span>OpenCV</span>
           <span>HuggingFace Transformers</span><span>NLP</span><span>Computer Vision</span>
-          <span>Grad-CAM</span><span>Generative AI</span>
+          <span>Generative AI</span>
         </div>
       </div>
       <div class="skill-card reveal">
@@ -165,7 +174,7 @@
           <h3>Backend</h3>
         </div>
         <div class="skill-tags">
-          <span>Python</span><span>FastAPI</span><span>Flask</span><span>WebSockets</span>
+          <span>Python</span><span>FastAPI</span><span>Flask</span><span>Node.js</span>
           <span>REST APIs</span><span>C</span><span>C++</span><span>Java</span>
         </div>
       </div>
@@ -175,7 +184,7 @@
           <h3>Data &amp; Cloud</h3>
         </div>
         <div class="skill-tags">
-          <span>SQL</span><span>MySQL</span><span>MongoDB</span><span>Tableau</span><span>Excel</span>
+          <span>MySQL</span><span>MongoDB</span><span>Tableau</span><span>Excel</span>
           <span>AWS (S3, RDS, ETL)</span><span>Git</span><span>GitHub</span><span>Postman</span><span>Vercel</span>
         </div>
       </div>
@@ -183,23 +192,26 @@
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section class="section" id="projects">
   <div class="section-inner">
     <p class="section-eyebrow reveal">03 / Projects</p>
     <h2 class="section-title reveal">Things I've built.</h2>
+    <p class="section-sub reveal">Each project is a full journey — problem to product. No notebooks that don't ship.</p>
 
+    <!-- OsteoAI - Flagship -->
     <div class="project-feature reveal">
-      <div class="project-feature-tag">FLAGSHIP PROJECT</div>
+      <div class="project-feature-tag">FLAGSHIP · AWARDED INTERNATIONALLY</div>
       <div class="project-feature-grid">
         <div class="project-feature-content">
           <h3>OsteoAI</h3>
           <p class="project-feature-sub">AI-Based Osteoporosis Risk Detection System</p>
           <p class="project-feature-desc">
-            A clinical-grade deep learning pipeline fusing <strong>EfficientNetV2S</strong> with a Tabular MLP
-            (age, biological sex) to screen for osteoporosis risk from X-ray imagery. Trained on the RSNA Bone Age
-            Dataset (~10,719 images) with Focal Loss (γ=2) to handle class imbalance, and Grad-CAM for explainability —
-            so the model's reasoning is visible, not a black box. Deployed full-stack with a FastAPI backend and
-            React/Vite frontend, complete with CLAHE preprocessing and heatmap overlays.
+            A clinical-grade deep learning pipeline that fuses <strong>EfficientNetV2S</strong> with a Tabular MLP
+            (age, biological sex) to screen osteoporosis risk from X-ray imagery. Trained on ~10,719 RSNA images
+            with Focal Loss (γ=2) for class imbalance and Grad-CAM explainability — so clinicians can see
+            exactly what the model is looking at, not just trust a score.
+            Deployed full-stack: FastAPI backend, React/Vite frontend on Vercel, CLAHE preprocessing and heatmap overlays included.
           </p>
           <div class="project-metrics">
             <div class="metric"><span class="metric-num">93–94%</span><span class="metric-label">Accuracy</span></div>
@@ -211,7 +223,7 @@
             <span>Python</span><span>TensorFlow</span><span>EfficientNetV2</span><span>FastAPI</span><span>React</span><span>OpenCV</span>
           </div>
           <div class="project-badges">
-            <span class="badge badge-gold">🏆 1st Runner-Up — IntelliTech 2026 (International)</span>
+            <span class="badge badge-gold">🏆 1st Runner-Up — IntelliTech 2026 (International, Peru)</span>
             <span class="badge badge-gold">🏆 Winner — Nexus Aescode 3.0 MedTech</span>
             <span class="badge badge-gold">🏆 1st Runner-Up — Offgrid 1.0</span>
           </div>
@@ -221,15 +233,20 @@
           </div>
         </div>
         <div class="project-feature-visual">
-          <div class="scan-frame">
-            <div class="scan-line"></div>
-            <div class="scan-grid"></div>
+          <div class="why-card">
+            <p class="why-label">// why this matters</p>
+            <p class="why-quote">"Osteoporosis affects 1 in 3 women over 50 — yet most cases go undetected until a fracture occurs. Early, accessible screening changes that."</p>
+            <p class="why-body">This project exists because the gap between medical knowledge and accessible tools is a solvable engineering problem. Building it taught me that real-world AI isn't about accuracy alone — it's about trust, explainability, and getting something into the hands of the people who need it.</p>
+            <div class="why-divider"></div>
+            <p class="why-stat"><span>5+</span> hackathon stages reached with this project</p>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Project Grid: 3 columns x 2 rows -->
     <div class="project-grid">
+
       <div class="project-card reveal">
         <div class="project-card-top">
           <span class="project-card-num">02</span>
@@ -237,14 +254,15 @@
         </div>
         <p class="project-card-sub">AI-Powered Peer Support Platform</p>
         <p class="project-card-desc">
-          An NLP emotion-classification pipeline built on HuggingFace Transformers that analyses journal entries
-          and matches users for real-time WebSocket chat support — anonymous by design, zero PII.
+          NLP emotion-classification pipeline (HuggingFace Transformers) that analyses journal entries and
+          matches users for anonymous peer chat support. Achieved ~85% classification accuracy and reduced
+          peer-matching time by ~40%. Zero PII stored by design.
         </p>
         <div class="project-tech project-tech-small">
-          <span>React</span><span>FastAPI</span><span>MongoDB</span><span>HuggingFace</span><span>WebSockets</span>
+          <span>React</span><span>FastAPI</span><span>MongoDB</span><span>HuggingFace</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/Sajiree-2005" target="_blank" rel="noopener" class="link-arrow">GitHub →</a>
+          <a href="https://github.com/Sajiree-2005/MirrorMe" target="_blank" rel="noopener" class="link-arrow">GitHub →</a>
         </div>
       </div>
 
@@ -255,38 +273,82 @@
         </div>
         <p class="project-card-sub">GitHub Portfolio Intelligence Tool</p>
         <p class="project-card-desc">
-          A client-side GitHub profile analyser scoring across recruiter-relevant dimensions — README quality,
-          project diversity, activity signals — improving portfolio clarity by an estimated 60%.
+          GitHub profile analyser scoring 100+ profiles across recruiter-relevant dimensions — README quality,
+          project diversity, activity signals. Results visualised as interactive radar charts via Tableau and Excel,
+          improving portfolio clarity by 60% and evaluation time by ~35%.
         </p>
         <div class="project-tech project-tech-small">
-          <span>React</span><span>TypeScript</span><span>Python</span><span>GitHub API</span><span>SQL</span>
+          <span>React</span><span>TypeScript</span><span>Python</span><span>GitHub API</span><span>Tableau</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/Sajiree-2005" target="_blank" rel="noopener" class="link-arrow">GitHub →</a>
+          <a href="https://github.com/Sajiree-2005/RecruitLens" target="_blank" rel="noopener" class="link-arrow">GitHub →</a>
         </div>
       </div>
 
       <div class="project-card reveal">
         <div class="project-card-top">
           <span class="project-card-num">04</span>
-          <h3>SkillSphere</h3>
+          <h3>EventVerse</h3>
         </div>
-        <p class="project-card-sub">Skill Mapping &amp; Growth Platform</p>
+        <p class="project-card-sub">Campus Event Management Platform</p>
         <p class="project-card-desc">
-          A platform concept for mapping technical skill growth over time, built as part of an ongoing
-          exploration into how students can track and showcase capability progression.
+          Full-stack campus event platform for MMCOE — students discover, register, and volunteer for events;
+          admins get a rich dashboard with analytics, CSV export, and real-time seat tracking. Includes an automated
+          email notification system and student analytics charts.
         </p>
         <div class="project-tech project-tech-small">
-          <span>React</span><span>Python</span><span>SQL</span>
+          <span>React</span><span>TypeScript</span><span>Flask</span><span>MySQL</span><span>Chart.js</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/Sajiree-2005" target="_blank" rel="noopener" class="link-arrow">GitHub →</a>
+          <a href="https://event-verse-amber.vercel.app" target="_blank" rel="noopener" class="link-arrow">Live →</a>
+          <a href="https://github.com/Sajiree-2005/EventVerse" target="_blank" rel="noopener" class="link-arrow">GitHub →</a>
         </div>
       </div>
+
+      <div class="project-card reveal">
+        <div class="project-card-top">
+          <span class="project-card-num">05</span>
+          <h3>CyberVerse</h3>
+        </div>
+        <p class="project-card-sub">Interactive CS Education Visualizer</p>
+        <p class="project-card-desc">
+          Cinematic, story-driven visualizer that teaches how computers think, remember, and defend themselves.
+          Story Mode scrolls through CPU, memory, networking, and security with interactive decision points.
+          Simulation Mode drops users into a real-time cyber-defense challenge.
+        </p>
+        <div class="project-tech project-tech-small">
+          <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind CSS</span><span>Playwright</span>
+        </div>
+        <div class="project-links">
+          <a href="https://cyber-verse-beryl.vercel.app" target="_blank" rel="noopener" class="link-arrow">Live →</a>
+          <a href="https://github.com/Sajiree-2005/CyberVerse" target="_blank" rel="noopener" class="link-arrow">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card-top">
+          <span class="project-card-num">06</span>
+          <h3>SkillSphere</h3>
+        </div>
+        <p class="project-card-sub">Online Course Recommendation Web App</p>
+        <p class="project-card-desc">
+          Personalised course recommendation platform that maps a learner's existing skills and goals
+          to relevant courses, helping students navigate the overwhelming landscape of online learning
+          with curated, contextual suggestions.
+        </p>
+        <div class="project-tech project-tech-small">
+          <span>React</span><span>Python</span><span>MySQL</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sajiree-2005/Skillsphere" target="_blank" rel="noopener" class="link-arrow">GitHub →</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section class="section section-alt" id="experience">
   <div class="section-inner">
     <p class="section-eyebrow reveal">04 / Experience</p>
@@ -296,37 +358,35 @@
       <div class="timeline-item reveal">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <span class="timeline-year">2024</span>
+          <span class="timeline-date">April – June 2026 · Remote</span>
           <h3>Google AI / ML Virtual Intern</h3>
           <p class="timeline-org">Google</p>
-          <p>Applied AI/ML fundamentals — classification pipelines, model evaluation, and AI system design —
-          in a project-based environment. Learnings fed directly into OsteoAI's model architecture.</p>
+          <p>Completed a structured AI/ML program developing hands-on skills in classification pipelines, model evaluation, and AI system design. Applied learnings directly to real project architecture — improving model selection and training strategy for a medical imaging pipeline.</p>
         </div>
       </div>
       <div class="timeline-item reveal">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <span class="timeline-year">2024</span>
-          <h3>JavaScript Development Virtual Intern</h3>
-          <p class="timeline-org">Kodbud</p>
-          <p>Built interactive web applications using JavaScript ES6+, DOM manipulation, and async APIs;
-          completed modules on modular architecture and cross-browser compatibility.</p>
+          <span class="timeline-date">March – April 2026 · Remote</span>
+          <h3>Full Stack Development Intern</h3>
+          <p class="timeline-org">Cognifyz Technologies</p>
+          <p>Designed and delivered multiple full-stack web projects using React, Node.js, Python, and REST APIs. Strengthened end-to-end development skills across iterative build cycles — from UI design to backend integration and deployment.</p>
         </div>
       </div>
       <div class="timeline-item reveal">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <span class="timeline-year">2024</span>
+          <span class="timeline-date">January – March 2026 · Remote</span>
           <h3>AWS Data Engineering Virtual Intern</h3>
           <p class="timeline-org">EduSkill</p>
-          <p>Executed cloud data pipelines and ETL workflows using AWS S3, RDS, and data engineering
-          best practices across simulated production environments.</p>
+          <p>Designed and executed cloud data pipelines and ETL workflows using AWS S3 and RDS across simulated production environments. Built foundational expertise in cloud-based data engineering and storage best practices.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ACHIEVEMENTS -->
 <section class="section" id="achievements">
   <div class="section-inner">
     <p class="section-eyebrow reveal">05 / Achievements</p>
@@ -343,8 +403,8 @@
       <div class="achievement-card reveal">
         <span class="achievement-trophy">🥇</span>
         <h3>Nexus Aescode 3.0</h3>
-        <p class="achievement-rank">Winner · MedTech Hackathon</p>
-        <p class="achievement-detail">Hosted by Bharati Vidyapeeth DU Medical College</p>
+        <p class="achievement-rank">Winner · MedTech Track</p>
+        <p class="achievement-detail">Bharati Vidyapeeth (DU) Medical College</p>
         <p class="achievement-team">Team InnoQueens</p>
       </div>
       <div class="achievement-card reveal">
@@ -361,17 +421,17 @@
       <div class="education-row">
         <div>
           <p class="education-degree">BTech Computer Engineering</p>
-          <p class="education-school">Marathwada Mitra Mandal's College of Engineering, Pune</p>
+          <p class="education-school">Marathwada Mitra Mandal's College of Engineering (MMCOE), Pune</p>
         </div>
         <div class="education-meta">
-          <span class="education-gpa">CGPA 9.6 / 10</span>
+          <span class="education-gpa">CGPA 9.65 / 10</span>
           <span class="education-years">2024 – 2028</span>
         </div>
       </div>
       <div class="education-row">
         <div>
           <p class="education-degree">Junior College (HSC)</p>
-          <p class="education-school">Kalmadi Shamrao Junior College</p>
+          <p class="education-school">Kalmadi Shamrao Junior College, Pune</p>
         </div>
         <div class="education-meta">
           <span class="education-gpa">92.67%</span>
@@ -381,6 +441,7 @@
   </div>
 </section>
 
+<!-- CERTIFICATIONS -->
 <section class="section section-alt" id="certifications">
   <div class="section-inner">
     <p class="section-eyebrow reveal">06 / Certifications</p>
@@ -393,7 +454,8 @@
       <div class="cert-card reveal"><span class="cert-icon">▣</span><p>Python Certification</p><span class="cert-issuer">HackerRank</span></div>
       <div class="cert-card reveal"><span class="cert-icon">▣</span><p>TechA Front End Dev Foundation</p><span class="cert-issuer">Infosys</span></div>
       <div class="cert-card reveal"><span class="cert-icon">▣</span><p>Java Programming</p><span class="cert-issuer">Oracle</span></div>
-      <div class="cert-card reveal"><span class="cert-icon">▣</span><p>MongoDB for SQL Experts</p><span class="cert-issuer">MongoDB</span></div>
+      <div class="cert-card reveal"><span class="cert-icon">▣</span><p>MongoDB for SQL Professionals</p><span class="cert-issuer">MongoDB</span></div>
+      <div class="cert-card reveal"><span class="cert-icon">▣</span><p>OpenAI Applied AI Foundations</p><span class="cert-issuer">OpenAI</span></div>
     </div>
 
     <div class="languages-row reveal">
@@ -402,47 +464,90 @@
         <span class="lang-pill">English <em>Fluent</em></span>
         <span class="lang-pill">Hindi <em>Fluent</em></span>
         <span class="lang-pill">Marathi <em>Native</em></span>
-        <span class="lang-pill lang-pill-accent">日本語 <em>JLPT N5</em></span>
+        <span class="lang-pill lang-pill-accent">日本語 <em>JLPT N5 Certified</em></span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="blog">
+<!-- COMMUNITY / LEARNED / OPEN SOURCE -->
+<section class="section" id="community">
   <div class="section-inner">
-    <p class="section-eyebrow reveal">07 / Writing</p>
-    <h2 class="section-title reveal">Notes &amp; thoughts.</h2>
-    <p class="section-sub reveal">Occasional write-ups on what I'm building and learning. More coming soon.</p>
+    <p class="section-eyebrow reveal">07 / Community &amp; Growth</p>
+    <h2 class="section-title reveal">Beyond the commit history.</h2>
+    <p class="section-sub reveal">What I've built in public, and what I've learned doing it.</p>
 
-    <div class="blog-grid">
-      <div class="blog-card reveal">
-        <span class="blog-tag">AI/ML</span>
-        <h3>Why Explainability Isn't Optional in Medical AI</h3>
-        <p>On building Grad-CAM into OsteoAI from day one — and why a model that can't show its work
-        doesn't belong near a diagnosis.</p>
-        <span class="blog-soon">Coming soon</span>
+    <!-- Open Source & Community subsection -->
+    <div class="community-grid">
+      <div class="community-card reveal">
+        <span class="community-icon">🌏</span>
+        <h3>Curious by Nature</h3>
+        <p class="community-role">Interdisciplinary · Always Learning</p>
+        <p>I study Japanese because I love how learning a language rewires the way you think.
+        I run marathons because sustained effort over long distances is the same skill as sustained effort on hard problems.
+        I got into engineering because of an anime. I think the best engineers are curious about the world outside their editor —
+        and I try to stay that way deliberately.</p>
       </div>
-      <div class="blog-card reveal">
-        <span class="blog-tag">Hackathons</span>
-        <h3>What Winning Three Hackathons Taught Me About Shipping</h3>
-        <p>Lessons from Team InnoQueens on going from idea to deployed demo in 36 hours, repeatedly.</p>
-        <span class="blog-soon">Coming soon</span>
+      <div class="community-card reveal">
+        <span class="community-icon">🏫</span>
+        <h3>Special School Volunteering</h3>
+        <p class="community-role">Field Volunteer</p>
+        <p>Participated in field visits to special schools for differently-abled students.
+        Engaging with this community reframed how I think about software design — accessibility and
+        empathy aren't features you add later, they're decisions you make on day one.</p>
       </div>
-      <div class="blog-card reveal">
-        <span class="blog-tag">Personal</span>
-        <h3>What Marathon Training Taught Me About Debugging</h3>
-        <p>On pacing, patience, and why both running and engineering reward the same kind of stubbornness.</p>
-        <span class="blog-soon">Coming soon</span>
+      <div class="community-card reveal">
+        <span class="community-icon">🌐</span>
+        <h3>Open Source Journey</h3>
+        <p class="community-role">GitHub · GSSoC · GSoC Explorer</p>
+        <p>I'm at the beginning of my open source journey — learning how large codebases are maintained,
+        how contributions are reviewed, and how to write code that others can build on.
+        All my projects are publicly maintained with full documentation.
+        Currently working towards my first GSSoC and GSoC contributions as a structured step into
+        the open source community.</p>
       </div>
     </div>
+
+    <!-- Things I've Learned -->
+    <div class="learned-section reveal">
+      <h3 class="learned-title">Things I've learned the hard way</h3>
+      <div class="learned-grid">
+        <div class="learned-card">
+          <span class="learned-tag">AI/ML</span>
+          <p class="learned-insight">"A model that can't explain itself has no place near a diagnosis."</p>
+          <p class="learned-body">Building Grad-CAM into OsteoAI from day one wasn't optional — it was what made the project credible.
+          Explainability isn't a feature, it's a responsibility.</p>
+        </div>
+        <div class="learned-card">
+          <span class="learned-tag">Hackathons</span>
+          <p class="learned-insight">"Ship the demo, not the dream."</p>
+          <p class="learned-body">Three wins taught me that a working, deployed product beats a perfect prototype every time.
+          Scope aggressively, cut ruthlessly, deploy early.</p>
+        </div>
+        <div class="learned-card">
+          <span class="learned-tag">Full-Stack</span>
+          <p class="learned-insight">"The backend is easy. The gap between backend and user is where products fail."</p>
+          <p class="learned-body">Every project I build now starts with the frontend question: what does the person
+          actually see and do? Then I work backwards to the model.</p>
+        </div>
+        <div class="learned-card">
+          <span class="learned-tag">Volunteering</span>
+          <p class="learned-insight">"Good tech starts with listening."</p>
+          <p class="learned-body">Spending time at special schools taught me that the best software is designed
+          with the people who will use it, not just for them. Empathy before engineering.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<section class="section contact-section" id="contact">
+<!-- CONTACT -->
+<section class="section contact-section section-alt" id="contact">
   <div class="section-inner">
     <p class="section-eyebrow reveal">08 / Contact</p>
     <h2 class="section-title reveal">Let's build something.</h2>
-    <p class="section-sub reveal">Open to internships, collaborations, and conversations about AI that ships.</p>
+    <p class="section-sub reveal">Open to internships, research collaborations, and conversations about engineering that ships.</p>
 
     <div class="contact-grid reveal">
       <a href="mailto:sajversion@gmail.com" class="contact-card">
@@ -473,7 +578,7 @@
 
 <footer class="footer">
   <p>Designed &amp; built by Sajiree Damle · Pune, India</p>
-  <p class="footer-sub">Crafted with intent — every section, every metric, every word.</p>
+  <p class="footer-sub">Every line of this portfolio written with the same standard as the projects inside it.</p>
 </footer>
 
 <script src="js/main.js"></script>
